@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "nixai"
+version = "0.1.0"
+description = "Generate nix expression using LLMs and RAG"
+authors = ["Jaka Hudoklin <jaka@x-truder.net>"]
+license = "ASL20"
+readme = "README.md"
+packages = [
+    { include = "nixai" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+langchain = "^0.1.4"
+langchain-community = "^0.0.16"
+gitpython = "^3.1.42"
+chromadb = "^0.4.22"
+langchain-together = "^0.0.2.post1"
+aiostream = "^0.5.2"
+fastembed = "^0.2.1"
+langchain-openai = "^0.0.6"
+langgraph = "^0.0.24"
+pygithub = "^2.2.0"
+unstructured = "^0.12.4"
+pdf2image = "^1.17.0"
+pdfminer-six = "^20231228"
+pillow-heif = "^0.15.0"
+redis = "^5.0.1"
+langchainhub = "^0.1.14"
+python-dotenv = "^1.0.1"
+markdown = "^3.5.2"
+fastapi = "^0.109.2"
+langserve = "^0.0.41"
+sse-starlette = "^2.0.0"
+ragatouille = "^0.0.7.post3"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
